@@ -1,0 +1,37 @@
+@use "../abstract/colors.scss";
+@use "../abstract/fonts.scss";
+
+.menu-btn{
+    padding: 0.3em 1em;
+    font-family: fonts.$mainFont;
+    font-weight: fonts.$semiBold;
+    color: colors.$whites;
+    background-color: colors.$main;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.cta{
+    padding: 0.3em 1em;
+    font-family: fonts.$mainFont;
+    font-weight: fonts.$semiBold;
+    color: colors.$whites;
+    background-color: colors.$highlights;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.cta2{
+    padding: 0.3em 1em;
+    font-family: fonts.$mainFont;
+    font-weight: fonts.$semiBold;
+    font-size: 1.5rem;
+    color: colors.$whites;
+    background-color: colors.$highlights;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.8rem;
+}
