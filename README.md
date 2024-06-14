@@ -10,7 +10,7 @@
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)&nbsp;
 
 </div>
-<h4 align="center">🚧 Versão mobile Em construção... 🚧
+<h4 align="center">🚧 Em construção... 🚧
  
 <br>
 Repositório criado para promover minhas aulas particulares de inglês. O design foi feito no foi criado com HTML, CSS (utilizando o pré-processador SASS) e Javascript puro.
