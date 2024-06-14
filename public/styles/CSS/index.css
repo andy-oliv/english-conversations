@@ -135,6 +135,7 @@
 body {
   background-color: #2D2D2D;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .heroSection {
@@ -771,10 +772,13 @@ footer .copyright a:active {
   .about {
     flex-direction: column;
     gap: 4em;
+    justify-content: center;
+    align-items: center;
   }
   .about .about-textContainer {
     width: 100%;
     align-items: center;
+    justify-content: center;
   }
   .about .about-textContainer .about-title_white {
     font-size: 2.5rem;
