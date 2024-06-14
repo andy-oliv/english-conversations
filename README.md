@@ -13,4 +13,4 @@
 <h4 align="center">🚧 Em construção... 🚧
  
 <br>
-Repositório criado para promover minhas aulas particulares de inglês. O design foi feito no foi criado com HTML, CSS (utilizando o pré-processador SASS) e Javascript puro.
+O repositório apresenta o código do site das minhas aulas particulares de inglês. O design foi feito no Figma e o site foi criado com HTML, CSS (utilizando o pré-processador SASS) e Javascript puro.
