@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -26,8 +27,8 @@ body{
     .heroSection-title{
         color: colors.$whites;
         font-weight: fonts.$extraBold;
-        font-size: 4.5rem;
-        width: 40rem;
+        font-size: 3.5rem;
+        width: 60%;
         span{
             color: colors.$secondary;
         }
@@ -35,11 +36,12 @@ body{
     .heroSection-text{
         color: colors.$whites;
         font-weight: fonts.$regular;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         width: 37rem;
     }
     .heroSection-image{
         object-fit: cover;
+        width: 60%;
     }
 }
 
@@ -48,7 +50,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 4em;
-    margin-bottom: 10em;
+    margin: 10em 0;
     .info-container{
         background-color: colors.$secondary;
         padding: 0 2em;
@@ -81,11 +83,13 @@ body{
     display: flex;
     padding: 0 3em;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 90%;
     gap: 2em;
     .about-textContainer{
         display: flex;
         flex-direction: column;
+        width: 50%;
         .about-title_white{
             color: colors.$whites;
             font-family: fonts.$secondaryFont;
@@ -192,7 +196,7 @@ body{
         flex-direction: column;
         gap: 2em;
         background-color: colors.$main;
-        width: 60%;
+        width: 50%;
         padding: 3em 1.5em;
         border-radius: 2.5em;
         margin-bottom: 10em;
@@ -259,8 +263,10 @@ body{
                 opacity: 0;
                 height: 0;
                 padding: 0 2em;
+                visibility: hidden;
             }
             .active{
+                visibility: visible;
                 animation-name: showAnswer;
                 animation-timing-function: ease-in-out;
                 animation-duration: 0.5s;
@@ -359,6 +365,7 @@ body{
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    cursor: pointer;
 }
 footer{
     display: flex;
@@ -373,7 +380,7 @@ footer{
         font-family: fonts.$mainFont;
         font-weight: fonts.$light;
         .social-icons{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         a:visited{
             color: colors.$whites;
@@ -426,13 +433,785 @@ footer{
     }
 }
 
-//SMARTPHONES
-
-@media (max-width: 768px){
-
+//TITLE
+@media (max-width: 550px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 75%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 85%;
+        }
+        .heroSection-image{
+            width: 100%;
+        }
+    }
 }
 
-//TABLETS
-@media (max-width: 992px){
+@media (min-width: 551px) and (max-width: 583px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 70%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 80%;
+        }
+        .heroSection-image{
+            width: 100%;
+        }
+    }
+}
 
+@media (min-width: 584px) and (max-width: 629px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 65%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 60%;
+        }
+        .heroSection-image{
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width: 630px) and (max-width: 700px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 56%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 55%;
+        }
+        .heroSection-image{
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width: 701px) and (max-width: 770px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 50%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 55%;
+        }
+        .heroSection-image{
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width: 771px) and (max-width: 850px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 2rem;
+            width: 88%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 80%;
+        }
+        .heroSection-image{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 851px) and (max-width: 950px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 2.3rem;
+            width: 100%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 100%;
+        }
+        .heroSection-image{
+            width: 55%;
+        }
+    }
+}
+
+@media (min-width: 851px) and (max-width: 950px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 2.3rem;
+            width: 100%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 100%;
+        }
+        .heroSection-image{
+            width: 55%;
+        }
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1080px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 2.5rem;
+            width: 100%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 100%;
+        }
+        .heroSection-image{
+            width: 58%;
+        }
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1280x){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 3rem;
+            width: 100%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 100%;
+        }
+        .heroSection-image{
+            width: 55%;
+        }
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1600px){
+    .heroSection{
+        margin: 0 1.5em;
+        padding: 2em;
+        .heroSection-title{
+            font-size: 3.5rem;
+            width: 80%;
+        }
+        .heroSection-text{
+            font-size: 1rem;
+            width: 100%;
+        }
+        .heroSection-image{
+            width: 70%;
+        }
+    }
+}
+//MOBILE
+@media (max-width: 700px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em 0;
+        margin: 10em 0;
+        align-items: center;
+        justify-items: center;
+        .info-container{
+            height: 14em;
+            width: 10em;
+            padding: 1em;
+            border-radius: 1.5em;
+            .container-img{
+                width: 90%;
+            }
+        }
+    }
+
+    .about{
+        flex-direction: column;
+        gap: 4em;
+        .about-textContainer{
+            width: 100%;
+            align-items: center;
+            .about-title_white{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .about-title_yellow{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .intro{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .classes{
+        flex-direction: column;
+        padding: 0 1.5em;
+        height: 60em;
+        .example{
+            width: 90%;
+            border-radius: 2em;
+        }
+        .example-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            gap: 1em;
+            #example-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .example-container{
+                .checkbox{
+                    .checkbox-text{
+                        font-size: 1.1rem;
+                    }
+                    .check{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .background_yellow{
+        padding: 10em 1.5em;
+        border-radius: 0;
+        .prices{
+            width: 95%;
+            padding: 2em 1.5em;
+            border-radius: 2em;
+            margin-bottom: 10em;
+            .prices-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1rem;
+                span{
+                    color: colors.$secondary;
+                }
+            }
+        }
+        .callToAction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5em;
+            #cta-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1.4rem;
+            }
+        }
+        .faq{
+            width: 100%;
+            border-radius: 2em;
+            .question{
+                .separator{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1em;
+                    padding: 0.5em 2em;
+                    .question-text{
+                        width: 90%;
+                        font-size: 1rem;
+                    }
+                    .bxs-chevron-up{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .messageWrapper{
+        width: 16em;
+        bottom: 7.5em;
+        left: 1em;
+        .message{
+            padding: 1.2em;
+            .contactSeparator{
+                .contact{
+                    font-size: 1rem;
+                }
+            }
+            #contactMessage{
+                font-size: 0.8rem;
+            }
+            #whatsMessenger{
+                width: 60%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .whatsLogo{
+        color: white;
+        background-color: colors.$whatsappGreen;
+        font-size: 2rem;
+        border-radius: 1em;
+        padding: 0.2em;
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
+        cursor: pointer;
+    }
+    
+    .pageUp{
+        color: colors.$main;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 1em;
+        right: 2em;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+        cursor: pointer;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5em;
+        .social{
+            flex-direction: column;
+            justify-content: center;
+            .social-icons{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            a:visited{
+                color: colors.$whites;
+            }
+            a:active{
+                color: colors.$whites;
+            }
+        }
+        .copyright{
+            color: colors.$whites;
+            font-family: fonts.$mainFont;
+            font-weight: fonts.$light;
+            .copyright-icons{
+                font-size: 2rem;
+                text-align: center;
+            }
+            a:visited{
+                color: colors.$whites;
+            }
+            a:active{
+                color: colors.$whites;
+            }
+        }
+    }    
+}
+
+//TABLET
+@media (min-width: 701px) and (max-width: 900px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em 0;
+        margin: 10em 0;
+        align-items: center;
+        justify-items: center;
+        .info-container{
+            height: 14em;
+            width: 10em;
+            padding: 1em;
+            border-radius: 1.5em;
+            .container-img{
+                width: 90%;
+            }
+        }
+    }
+
+    .about{
+        flex-direction: column;
+        gap: 4em;
+        .about-textContainer{
+            width: 80%;
+            align-items: center;
+            .about-title_white{
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            .about-title_yellow{
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            .intro{
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .classes{
+        flex-direction: column;
+        padding: 0 1.5em;
+        height: 60em;
+        .example{
+            width: 90%;
+            border-radius: 2em;
+        }
+        .example-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            gap: 1em;
+            #example-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .example-container{
+                .checkbox{
+                    .checkbox-text{
+                        font-size: 1.1rem;
+                    }
+                    .check{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .background_yellow{
+        padding: 10em 1.5em;
+        border-radius: 0;
+        .prices{
+            width: 95%;
+            padding: 2em 1.5em;
+            border-radius: 2em;
+            margin-bottom: 10em;
+            .prices-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1rem;
+                span{
+                    color: colors.$secondary;
+                }
+            }
+        }
+        .callToAction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5em;
+            #cta-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1.4rem;
+            }
+        }
+        .faq{
+            width: 100%;
+            border-radius: 2em;
+            .question{
+                .separator{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1em;
+                    padding: 0.5em 2em;
+                    .question-text{
+                        width: 90%;
+                        font-size: 1rem;
+                    }
+                    .bxs-chevron-up{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .messageWrapper{
+        width: 16em;
+        bottom: 7.5em;
+        left: 1em;
+        .message{
+            padding: 1.2em;
+            .contactSeparator{
+                .contact{
+                    font-size: 1rem;
+                }
+            }
+            #contactMessage{
+                font-size: 0.8rem;
+            }
+            #whatsMessenger{
+                width: 60%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .whatsLogo{
+        color: white;
+        background-color: colors.$whatsappGreen;
+        font-size: 2rem;
+        border-radius: 1em;
+        padding: 0.2em;
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
+        cursor: pointer;
+    }
+    
+    .pageUp{
+        color: colors.$main;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 1em;
+        right: 2em;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+        cursor: pointer;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5em;
+        .social{
+            flex-direction: column;
+            justify-content: center;
+            .social-icons{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            a:visited{
+                color: colors.$whites;
+            }
+            a:active{
+                color: colors.$whites;
+            }
+        }
+        .copyright{
+            color: colors.$whites;
+            font-family: fonts.$mainFont;
+            font-weight: fonts.$light;
+            .copyright-icons{
+                font-size: 2rem;
+                text-align: center;
+            }
+            a:visited{
+                color: colors.$whites;
+            }
+            a:active{
+                color: colors.$whites;
+            }
+        }
+    }    
+}
+
+//DESKTOP
+@media (min-width: 901px) and (max-width: 1200px){
+    .info{
+        gap: 2em;
+        margin: 10em 0;
+        align-items: center;
+        justify-items: center;
+        .info-container{
+            height: 14em;
+            width: 10em;
+            padding: 1em;
+            border-radius: 1.5em;
+            .container-img{
+                width: 90%;
+            }
+        }
+    }
+
+    .about{
+        flex-direction: column;
+        gap: 4em;
+        .about-textContainer{
+            align-items: center;
+            .about-title_white{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .about-title_yellow{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .intro{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .classes{
+        flex-direction: column;
+        padding: 0 1.5em;
+        height: 60em;
+        .example{
+            width: 80%;
+            border-radius: 2em;
+        }
+        .example-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            gap: 1em;
+            #example-title{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .example-container{
+                .checkbox{
+                    .checkbox-text{
+                        font-size: 1.1rem;
+                    }
+                    .check{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .background_yellow{
+        padding: 10em 1.5em;
+        border-radius: 0;
+        .prices{
+            width: 75%;
+            padding: 2em 1.5em;
+            border-radius: 2em;
+            margin-bottom: 10em;
+            .prices-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1rem;
+                span{
+                    color: colors.$secondary;
+                }
+            }
+        }
+        .callToAction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5em;
+            #cta-text{
+                color: colors.$whites;
+                font-family: fonts.$mainFont;
+                font-size: 1.4rem;
+            }
+        }
+        .faq{
+            width: 100%;
+            border-radius: 2em;
+            .question{
+                .separator{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1em;
+                    padding: 0.5em 2em;
+                    .question-text{
+                        width: 90%;
+                        font-size: 1rem;
+                    }
+                    .bxs-chevron-up{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .messageWrapper{
+        width: 16em;
+        bottom: 7.5em;
+        left: 1em;
+        .message{
+            padding: 1.2em;
+            .contactSeparator{
+                .contact{
+                    font-size: 1rem;
+                }
+            }
+            #contactMessage{
+                font-size: 0.8rem;
+            }
+            #whatsMessenger{
+                width: 60%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    .whatsLogo{
+        color: white;
+        background-color: colors.$whatsappGreen;
+        font-size: 2rem;
+        border-radius: 1em;
+        padding: 0.2em;
+        position: fixed;
+        bottom: 1em;
+        left: 1em;
+        cursor: pointer;
+    }
+    
+    .pageUp{
+        color: colors.$main;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 1em;
+        right: 2em;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+        cursor: pointer;
+    }
 }

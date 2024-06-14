@@ -14,3 +14,80 @@
         margin-top: 4em;
     }
 }
+
+#mobileIcon{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .btn-container{
+        display: none;
+    }.menu{
+        padding: 0 1.5em;
+        #headerLogo{
+            width: 16em;
+            margin-top: 4em;
+        }
+    }
+ 
+    #mobileIcon{
+        display: block;
+        color: colors.$main;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+    }
+    .mobileMenu{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: colors.$main;
+        box-shadow: 1px 2px 4px 0.5px;
+        padding: 2em;
+        gap: 0.5em;
+        border-radius: 1em 0 1em 1em;
+        top: 1em;
+        right: 0.5em;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(5em);
+        #closeBtn{
+            position:absolute;
+            right: 0.3em;
+            top: 0.2em;
+            font-size: 1.7rem;
+            color: colors.$whites;
+        }
+    }
+    .menuClicked{
+        visibility: visible;
+        animation-name: mobileMenuShow;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        
+    }
+}
+
+@keyframes mobileMenuShow{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0.2;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
