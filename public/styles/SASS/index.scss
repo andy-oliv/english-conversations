@@ -383,6 +383,9 @@ footer{
         .social-icons{
             font-size: 2rem;
         }
+        a{
+            color: colors.$whites;
+        }
         a:visited{
             color: colors.$whites;
         }
@@ -396,6 +399,9 @@ footer{
         font-weight: fonts.$light;
         .copyright-icons{
             font-size: 2rem;
+        }
+        a{
+            color: colors.$whites;
         }
         a:visited{
             color: colors.$whites;

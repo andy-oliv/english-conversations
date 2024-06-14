@@ -508,6 +508,9 @@ footer .social {
 footer .social .social-icons {
   font-size: 2rem;
 }
+footer .social a {
+  color: #FBEECF;
+}
 footer .social a:visited {
   color: #FBEECF;
 }
@@ -521,6 +524,9 @@ footer .copyright {
 }
 footer .copyright .copyright-icons {
   font-size: 2rem;
+}
+footer .copyright a {
+  color: #FBEECF;
 }
 footer .copyright a:visited {
   color: #FBEECF;
